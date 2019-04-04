@@ -57,7 +57,7 @@ public class Network {
 
     public static String uploadFile(String httpURL, File file, String valueName, int attempt) {
         attempt++;
-        String boundary = "--FlashAndroid" + new Random().nextInt();
+        String boundary = "--AudDExampleAndroid" + new Random().nextInt();
         FileUploader fileUpload = new FileUploader(file, boundary, valueName);
         HttpURLConnection connection = null;
         try {
